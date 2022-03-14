@@ -1,0 +1,16 @@
+version: "3.5"
+
+networks:
+  gripp_feature_selector_network:
+    name: gripp_feature_selector
+
+services:
+  gripp_feature_selector:
+    image: gripp_feature_selector
+    build: ./
+    volumes:
+      - ../input:/input
+      - ../output:/output
+      - ../config.json:/config.json
+    networks:
+      - gripp_feature_selector_network

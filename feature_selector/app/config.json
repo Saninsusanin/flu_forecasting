@@ -1,0 +1,24 @@
+{
+  "fit_model": {
+    "diseases": ["ARI"],
+    "ages": ["0_2", "15"],
+    "regions": "all",
+    "input": ["EPI_MAIN.xlsx", "LABD_PCR.xlsx"]
+  },
+  "predict": {
+    "length_of_prediction_interval": 53,
+    "diseases": ["ARI"],
+    "ages": ["15"],
+    "regions": "all",
+    "values_filename": "values"
+  },
+  "select_features": {
+    "percentage": 0.5,
+    "features": ["ARI_0_2", "ARI_3_6", "ARI_7_14", "ARI_TOTAL"],
+    "target_column_name": "ARI_15",
+    "percent_of_features": 0.7,
+    "method": "brute_force",
+    "input": ["EPI_MAIN.xlsx", "LABD_PCR.xlsx"],
+    "most_valuable_features_filename": "most_valuable_features"
+  }
+}

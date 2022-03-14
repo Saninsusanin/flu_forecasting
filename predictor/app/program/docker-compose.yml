@@ -1,0 +1,16 @@
+version: "3.5"
+
+networks:
+  gripp_predictor_network:
+    name: gripp_predictor
+
+services:
+  gripp_predictor:
+    image: gripp_predictor
+    build: ./
+    volumes:
+      - ../input:/input
+      - ../output:/output
+      - ../config.json:/config.json
+    networks:
+      - gripp_predictor_network

@@ -1,0 +1,15 @@
+{
+  "fit_model": {
+    "diseases": ["ARI"],
+    "ages": ["0_2", "15"],
+    "regions": "all",
+    "input": ["EPI_MAIN.xlsx", "LABD_PCR.xlsx"]
+  },
+  "predict": {
+    "length_of_prediction_interval": 53,
+    "diseases": ["ARI"],
+    "ages": ["15"],
+    "regions": "all",
+    "values_filename": "values"
+  }
+}

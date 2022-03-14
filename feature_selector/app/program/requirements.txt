@@ -1,0 +1,9 @@
+scikit-learn>=0.23
+pandas>=1.1
+scipy>=1.5
+numpy>=1.17
+xlrd==2.0.1
+openpyxl==3.0.7
+matplotlib==3.4.3
+xgboost==1.4.2
+statsmodels==0.12.2
